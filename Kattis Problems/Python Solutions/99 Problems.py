@@ -1,9 +1,9 @@
 num = int(input())
 answer = None
-if num <= 99:
-    answer = 99
+if num <= 99: # If the answer is the max then we already know the answer.
+    answer = 99 
 else:
-    down = num
+    down = num # Mark down and up as our inital number
     up = num
     while str(down)[-2:] != "99":
         down -= 1
